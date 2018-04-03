@@ -22,5 +22,9 @@ class DatabaseSeeder extends Seeder
         /*blablablabla*/
         /*blablablabla*/
         /*blablablabla*/
+        
+        $this->call('CommentTableSeeder');
+        // $this->call(CommentTableSeeder::class); kalau yg atas tidak bisa, pakai yg ini
+        $this->command->info('Comment table seeded.');
     }
 }
